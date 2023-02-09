@@ -1,0 +1,256 @@
+<!-- grid-area:1/1/3/3;
+start row/start col/end row/end col
+justify-content
+align-content-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS grid</title>
+<style>
+.grid-container
+{
+background-color:white;
+display:grid;/*inline-grid;*/
+grid-template-areas:'header header header header header header'
+'marquee marquee marquee marquee marquee marquee'
+'menu main main main right right'
+'menu main main main bottom bottom'
+'footer footer footer footer footer footer';
+}
+.grid-item
+{
+padding:auto;
+border:1px solid black;
+font-size:20px;
+}
+#g1
+{
+grid-area:header;
+background-color: #4CAF50;
+}
+#g6
+{
+grid-area:marquee;
+color: #4CAF50
+}
+#g2 {
+grid-area:menu;
+}
+#g3
+{
+grid-area:main;
+}
+#g4
+{
+grid-area:right;
+}
+#g7
+{
+grid-area:bottom;
+background-color: #4CAF50;
+}
+#g5
+{
+grid-area:footer;
+}
+*{transition:all 0.3s ease-in-out;}
+.logo img{float:left;}
+nav{float:right;}
+.logo img{float:left;}
+.nav ul li{
+display: inline-block; padding:10px;
+font-size:20px; font-family:raleway;
+color:white;
+}
+.li ul li:hover{
+color:orange;
+}
+/* Bordered form */
+form {
+border: 3px solid #f1f1f1;
+}
+/* Full-width inputs */ input[type=text], input[type=password] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+/* Set a style for all buttons */
+button {
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+/* Add a hover effect for buttons */
+button:hover {
+opacity: 0.8;
+}
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+width: auto;
+padding: 10px 18px;
+background-color: #f44336;
+}
+/* Center the avatar image inside this container */
+.imgcontainer {
+text-align: center;
+margin: 24px 0 12px 0;
+}
+/* Avatar image */
+img.avatar {
+width: 40%;
+border-radius: 50%; }
+/* Add padding to containers */
+.container {
+padding: 16px;
+}
+/* The "Forgot password" text */
+span.psw {
+float: right;
+padding-top: 16px;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+span.psw {
+display: block;
+float: none;
+}
+.cancelbtn {
+width: 100%;
+}
+}
+a, a:focus, a:active {
+text-decoration: none;
+color: inherit;
+}
+a:hover{
+color:orange;
+}
+ul li{
+display: inline-block; padding:10px;
+font-size:20px; font-family:raleway;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+<div class="grid-item" id="g1">
+<div class="logo"><img src="E:\Users\lenovo\Desktop\New folder\New folder (3)\New folder (2)/download.png"width="130">
+</div>
+<div class="li">
+<div class="nav">
+<nav>
+<ul>
+<li><a href="file:///C:/Users/lenovo/Desktop/inst.html">Home</a></li>
+<li><a href="default.asp">News</a></li>
+<li><a href="default.asp">Contact</a></li>
+<li><a href="default.asp">About</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<hr />
+<div class="grid-item" id="g6"><marquee width="100%" direction="left" height="80px"
+hspace="10" vspace="10" >
+<h2>Timeline before which UDIN are to updated with respect to the audit report and certificates
+uploaded from 27th April, 2020 extended up to 30th April, 2021. Kindly update to avoid
+invalidation.Last date to link PAN with Aadhaar is 30th June 2021.Excel & Java version of ITR
+utilities will be discontinued from AY 2021-22</h2>
+</marquee></div>
+<div class="grid-item" id="g2"> <form action="action_page.php" method="post">
+<div class="imgcontainer">
+LOGIN DETAILS
+</div>
+<div class="container">
+<br>
+<label for="uname"><b>Username</b></label>
+<input type="text" placeholder="Enter Username" name="uname" required>
+<label for="psw"><b>Password</b></label>
+<input type="password" placeholder="Enter Password" name="psw" required>
+<button type="submit">Login</button>
+<label>
+<input type="checkbox" checked="checked" name="remember"> Remember me
+</label>
+</div><div class="container" style="background-color:#f1f1f1">
+<button type="button" class="cancelbtn">Cancel</button>
+<span class="psw">Forgot <a href="#">password?</a></span>
+</div>
+</form></div>
+<div class="grid-item" id="g3"><CENTER>NEWS AND UPDTES</center>
+<ul>
+<li>
+08/04/2021
+All institutions, funds etc covered under clause (i) and (iv) of first proviso to section 10(23C),
+fifth proviso to section 35(1), clause (i) and (iv) of first proviso to section 80G(5) and sub-clause
+(i) and (vi) of section 12A(1)(ac) of the Income Tax Act-1961 are required to re-register a fresh
+by using modified form-10A. Form-10A is also to be used for fresh registration under any of the
+above sections. click here to see the notification
+</li>
+<li>
+03/04/2021
+User can now download and fill the offline utility for ITR 1 & 4 (AY 2021-22). The utility for
+other ITRs will be enabled shortly
+</li>
+<li>
+03/04/2021
+ITR submission for AY 2021-22 will be made available shortly
+</li>
+<li>
+03/04/2021
+For AY 2021-22, the ITR1 to 4 can be filled using single JSON Utility.Import of Prefill file is
+mandatory in utility Refer the attachment for more details
+</li>
+<li>
+03/04/2021
+Excel & Java version of ITR utilities will be discontinued from AY 2021-22
+</li>
+</ul>
+</div>
+<div class="grid-item" id="g4">
+<center> QUICK LINKS</center>
+<div class="unor">
+<ol><menu>
+<li><a
+href="https://www.incometaxindiaefiling.gov.in/Scan_Documents/index.html?lang=eng">Scan
+the Supporting Documents</a></li>
+<li><a href="https://www.incometaxindiaefiling.gov.in/EVC/?lang=eng">e-Verify
+Return</a></li>
+<li><a href="https://www.incometaxindiaefiling.gov.in/main/ResetPassword?lang=eng">Reset
+Password</a></li>
+<li><a href="https://www.incometaxindiaefiling.gov.in/updatePanAadhaar?lang=eng">Update
+PAN/Aadhaar Details</a></li>
+<li><a
+href="https://www.incometaxindiaefiling.gov.in/General_Precaution_Cybercrime/index.html?la
+ng=eng">Report Account Misuse</a></li>
+</menu>
+</ol>
+</div>
+</div>
+<div class="grid-item" id="g7">
+<center> FAQ'S</center>
+<ol>
+<menu>
+<li><a href="https://www.incometaxindia.gov.in/pages/faqs.aspx">FAQs on Direct Tax Vivad
+Se Vishwas Act, 2020</a></li>
+<li><a href="https://www.incometaxindia.gov.in/pages/faqs.aspx">FAQs on Computation of
+Tax</a></li>
+<li><a href="https://www.incometaxindia.gov.in/pages/faqs.aspx">General FAQs</a></li>
+<li><a href="https://www.incometaxindia.gov.in/pages/faqs.aspx">FAQs on the Income
+Declaration Scheme, 2016</a></li>
+</menu>
+</ol></div>
+<div class="grid-item" id="g5"><center>Website Policies | Accessibility Statement | Site Map
+Copyright Ⓒ Income Tax Department, Ministry of Finance, Government of India.
+All Rights Reserved | Site Last Updated on 20/04/2021
+This site is best viewed in 1024 x 768 resolution with latest version of Chrome, Firefox, Safari
+and Internet Explorer.</center></div>
+</div>
+</body>
+</html>
